@@ -1,0 +1,26 @@
+//Main scss file containing all the seperate files for different modules
+//Some basic styling
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  background: #f2f2f2;
+  color: #555555;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+h1 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+//Importing all the scss modules
+@import './components/title-bar';
+@import './components/wrapper';
+@import './components/person';
+@import './components/button';
+@import './components/form';
+@import '../../../node_modules/pretty-checkbox/src/pretty-checkbox.scss';
