@@ -6,7 +6,7 @@ import AddPerson from './AddPerson.js';
 import PersonList from './PersonList.js';
 import PersonListView from './PersonListView.js';
 
-export default class App extends React.Component {
+export default class AppEdit extends React.Component {
   render(){
     return(
       <div>
@@ -15,14 +15,13 @@ export default class App extends React.Component {
           <NavigationBar/>
           <div className="wrapper">
             <PersonList persons={this.props.persons}/>
-            <AddPerson/>
           </div>
       </div>
     );
   }
 };
 
-App.propTypes = {
+AppEdit.propTypes = {
   title: PropTypes.string.isRequired,
   persons: PropTypes.array.isRequired
 };
