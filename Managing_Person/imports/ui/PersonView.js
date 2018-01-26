@@ -11,7 +11,7 @@ export default class PersonView extends React.Component{
       <div key={this.props.person._id} className="person ">
           <div className="wrapperview">
           <div className="wrappingitem"><b>Name:</b> {this.props.person.name}</div>
-          <div className="wrappingitem"><b>Age:</b> {this.props.person.age}</div>
+          <div className="wrappingitem1"><b>Age:</b> {this.props.person.age}</div>
           <div className="pretty p-switch p-fill">
             <input className="checkboxes" type="checkbox" name="personIsActive"    checked={this.props.person.isActive} />
             <div className="state">
